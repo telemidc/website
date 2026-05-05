@@ -1,0 +1,53 @@
+{
+    "nav.home": "Home",
+    "nav.about": "About Us",
+    "nav.services": "Services",
+    "nav.contact": "Contact",
+    "lang.switch": "العربية",
+    "lang.code": "ar",
+
+    "hero.title": "Resources of Development",
+    "hero.subtitle": "A leading company in training and institutional development",
+    "hero.cta": "Contact Us",
+    "hero.discover": "Discover More",
+
+    "about.title": "About Us",
+    "about.subtitle": "Who We Are",
+    "about.desc": "Resources of Development is a leading company in the field of training and institutional development, providing integrated solutions to enhance human competencies and develop organizations. We believe that investing in people is the greatest and most sustainable investment.",
+    "about.accred_title": "International Accreditation",
+    "about.accred_desc": "Accredited according to the highest standards in organizational management and institutional performance by the International Accreditation Organization IAO.",
+    "about.iso_title": "ISO Quality",
+    "about.iso_desc": "Certified with the ISO Quality Management Systems standard ISO 9001:2015.",
+
+    "stats.courses": "Training Courses",
+    "stats.trainees": "Trainees",
+    "stats.experts": "Specialists",
+    "stats.countries": "Countries",
+
+    "services.title": "Our Services",
+    "services.subtitle": "Why Choose Us?",
+    "services.s1_title": "Professional Competence",
+    "services.s1_desc": "A fully equipped team delivering professional training to the highest standards.",
+    "services.s2_title": "Institutional Development",
+    "services.s2_desc": "Specialized programs to develop institutions and raise institutional performance.",
+    "services.s3_title": "Management Consulting",
+    "services.s3_desc": "Specialized consulting in management, human resources, and development.",
+    "services.s4_title": "International Certifications",
+    "services.s4_desc": "Internationally accredited programs granting globally recognized certificates.",
+    "services.s5_title": "Integrated Solutions",
+    "services.s5_desc": "We provide all logistical support services for the training process.",
+    "services.s6_title": "Distinguished Team",
+    "services.s6_desc": "A team of highly competent experts and specialists.",
+
+    "contact.title": "Contact Us",
+    "contact.address_label": "Address",
+    "contact.address": "Benghazi - Libya, Venice Street, next to Venice Hospital",
+    "contact.phone_label": "Phone Numbers",
+    "contact.email_label": "Email",
+    "contact.map_label": "Our Location",
+
+    "footer.rights": "All Rights Reserved",
+    "footer.dev_by": "Developed by",
+    "footer.quick": "Quick Links",
+    "footer.contact": "Contact Info"
+}
