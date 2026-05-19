@@ -1,31 +1,14 @@
 <?php
-
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
-    /**
-     * Run the migrations.
-     */
-    public function up(): void
-    {
-        Schema::create('exams', function (Blueprint $table) {
-            $table->id();
-            $table->string('course_name');
-            $table->date('exam_date');
-            $table->time('start_time');
-            $table->time('end_time');
-            $table->timestamps();
-        });
+// This file intentionally left empty - exams table is fully defined in update_exams_table.php
+// which runs after all dependencies are created
+return new class extends Migration {
+    public function up(): void {
+        // The old exams table (course_name) is dropped and recreated in update_exams_table.php
+        // Nothing to do here
     }
-
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        Schema::dropIfExists('exams');
-    }
+    public function down(): void {}
 };

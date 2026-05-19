@@ -20,6 +20,16 @@
 </head>
 <body lang="{{ $locale ?? 'ar' }}">
 
+@php
+    $isHomePage = request()->routeIs('home');
+    $navHome = $isHomePage ? '#home' : route('home') . '#home';
+    $navAbout = $isHomePage ? '#about' : route('home') . '#about';
+    $navCourses = $isHomePage ? '#courses' : route('home') . '#courses';
+    $navExams = $isHomePage ? '#exams' : route('home') . '#exams';
+    $navJoin = $isHomePage ? '#join' : route('home') . '#join';
+    $navContact = $isHomePage ? '#contact' : route('home') . '#contact';
+@endphp
+
 <!-- ===== NAVBAR ===== -->
 <nav class="navbar" id="navbar">
     <div class="container">
@@ -29,10 +39,12 @@
             </a>
 
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">{{ __('nav.home') }}</a></li>
-                <li><a href="#about" class="nav-link">{{ __('nav.about') }}</a></li>
-                <li><a href="#services" class="nav-link">{{ __('nav.services') }}</a></li>
-                <li><a href="#contact" class="nav-link">{{ __('nav.contact') }}</a></li>
+                <li><a href="{{ $navHome }}" class="nav-link">{{ __('nav.home') }}</a></li>
+                <li><a href="{{ $navAbout }}" class="nav-link">{{ __('nav.about') }}</a></li>
+                <li><a href="{{ $navCourses }}" class="nav-link">{{ ($locale ?? 'ar') === 'ar' ? 'الدورات' : 'Courses' }}</a></li>
+                <li><a href="{{ $navExams }}" class="nav-link">{{ ($locale ?? 'ar') === 'ar' ? 'الامتحانات' : 'Exams' }}</a></li>
+                <li><a href="{{ $navJoin }}" class="nav-link">{{ ($locale ?? 'ar') === 'ar' ? 'التقديم كخبير' : 'Apply as Expert' }}</a></li>
+                <li><a href="{{ $navContact }}" class="nav-link">{{ __('nav.contact') }}</a></li>
                 <li>
                     <a href="{{ route('lang.switch', __('lang.code')) }}" class="lang-btn">
                         <i class="ph ph-translate-tts"></i>
@@ -53,10 +65,12 @@
     <button class="mobile-menu-close" id="mobileClose" aria-label="Close">
         <i class="ph ph-x"></i>
     </button>
-    <a href="#home" class="mobile-nav-link" onclick="closeMobileMenu()">{{ __('nav.home') }}</a>
-    <a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()">{{ __('nav.about') }}</a>
-    <a href="#services" class="mobile-nav-link" onclick="closeMobileMenu()">{{ __('nav.services') }}</a>
-    <a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()">{{ __('nav.contact') }}</a>
+    <a href="{{ $navHome }}" class="mobile-nav-link" onclick="closeMobileMenu()">{{ __('nav.home') }}</a>
+    <a href="{{ $navAbout }}" class="mobile-nav-link" onclick="closeMobileMenu()">{{ __('nav.about') }}</a>
+    <a href="{{ $navCourses }}" class="mobile-nav-link" onclick="closeMobileMenu()">{{ ($locale ?? 'ar') === 'ar' ? 'الدورات' : 'Courses' }}</a>
+    <a href="{{ $navExams }}" class="mobile-nav-link" onclick="closeMobileMenu()">{{ ($locale ?? 'ar') === 'ar' ? 'الامتحانات' : 'Exams' }}</a>
+    <a href="{{ $navJoin }}" class="mobile-nav-link" onclick="closeMobileMenu()">{{ ($locale ?? 'ar') === 'ar' ? 'التقديم كخبير' : 'Apply as Expert' }}</a>
+    <a href="{{ $navContact }}" class="mobile-nav-link" onclick="closeMobileMenu()">{{ __('nav.contact') }}</a>
     <a href="{{ route('lang.switch', __('lang.code')) }}" class="lang-btn" style="margin-top:16px">
         <i class="ph ph-translate-tts"></i>
         {{ __('lang.switch') }}
