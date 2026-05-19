@@ -158,6 +158,34 @@
     </div>
 </section>
 
+<!-- ===== INTERNATIONAL PARTNERS ===== -->
+<section class="section-pad" id="partners" style="background:var(--white);">
+    <div class="container">
+        <div class="text-center">
+            <span class="section-label" data-aos="fade-up">{{ $locale === 'ar' ? 'اعتمادات وشراكات' : 'Accreditations & Partnerships' }}</span>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">{{ $locale === 'ar' ? 'شركاؤنا الدوليين' : 'Our International Partners' }}</h2>
+        </div>
+
+        <div class="partners-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:22px;margin-top:45px;align-items:center;">
+            <div class="partner-card" data-aos="fade-up" data-aos-delay="0" style="background:#fff;border:1px solid rgba(85,48,129,.08);border-radius:18px;padding:24px;min-height:140px;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(15,23,42,.06);">
+                <img src="{{ asset('assets/partner-oet.png') }}" alt="OET Occupational English Test" style="width:100%;max-height:88px;object-fit:contain;">
+            </div>
+            <div class="partner-card" data-aos="fade-up" data-aos-delay="80" style="background:#fff;border:1px solid rgba(85,48,129,.08);border-radius:18px;padding:24px;min-height:140px;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(15,23,42,.06);">
+                <img src="{{ asset('assets/partner-pearson.png') }}" alt="Pearson" style="width:100%;max-height:88px;object-fit:contain;">
+            </div>
+            <div class="partner-card" data-aos="fade-up" data-aos-delay="160" style="background:#fff;border:1px solid rgba(85,48,129,.08);border-radius:18px;padding:24px;min-height:140px;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(15,23,42,.06);">
+                <img src="{{ asset('assets/partner-pmi.png') }}" alt="Project Management Institute" style="width:100%;max-height:88px;object-fit:contain;">
+            </div>
+            <div class="partner-card" data-aos="fade-up" data-aos-delay="240" style="background:#fff;border:1px solid rgba(85,48,129,.08);border-radius:18px;padding:24px;min-height:140px;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(15,23,42,.06);">
+                <img src="{{ asset('assets/partner-cisco.png') }}" alt="Cisco" style="width:100%;max-height:88px;object-fit:contain;">
+            </div>
+            <div class="partner-card" data-aos="fade-up" data-aos-delay="320" style="background:#fff;border:1px solid rgba(85,48,129,.08);border-radius:18px;padding:24px;min-height:140px;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(15,23,42,.06);">
+                <img src="{{ asset('assets/partner-pmp.png') }}" alt="PMI PMP" style="width:100%;max-height:88px;object-fit:contain;">
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- ===== COURSES (first 4) ===== -->
 @if(isset($courses) && $courses->count() > 0)
 <section class="section-pad" id="courses" style="background:var(--white);">
